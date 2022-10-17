@@ -1,0 +1,53 @@
+
+
+
+
+
+.website1text{
+  color:Purple;
+  font-family: cursive;
+  font-size: 65px;
+}
+span.website1text{
+  color:purple;
+  font-family:cursive;
+  font-size: 65px;
+}
+
+
+.p-secondpage{
+  color:pink;
+  font-family:inherit;
+  font-size: 25px;
+  font-style: oblique;
+}
+
+.TitleofSecondPage{
+  font-family: fantasy;
+  fontsize:30px;
+}
+
+span.TitleofSecondPage{
+  font-family: fantasy;
+  font-size: 30px
+
+}
+
+body{
+background-color: orange;
+  height: 100%;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+#page2websitelink{
+  font-size: 100%;
+  color: Purple;
+}
+
+#text3website{
+  font-size: 200%;
+  color: Red;
+  font-family:inherit;
+}
