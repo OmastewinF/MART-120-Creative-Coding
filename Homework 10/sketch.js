@@ -21,6 +21,11 @@ var size = 15;
 var count = 0;
 var sizeDirection = 1;
 
+var bodyx= 235;
+var bodyy= 280;
+var bodymovement = 10;
+
+
 
 
 
@@ -68,7 +73,16 @@ function draw ()
 
 // Body
 fill(0,0, 225);
-rect(235, 280, 125, 180);
+rect(bodyx, bodyy, 125, 180);
+if(bodyx >=500 || bodyx<=0 )
+{
+bodymovement*=-1;
+}
+
+bodyx+=bodymovement;
+
+
+
 
 // Face
 fill (255, 204, 0);
