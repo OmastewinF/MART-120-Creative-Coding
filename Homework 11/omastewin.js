@@ -2,7 +2,10 @@
 // Varibles for the obsitcals
 var bigsqaurey=440;
 var bigsqaurediamenter= 90;
-var bigsqauremovement = 9;
+var bigsqauremovement = 11;
+
+var bigsqaurey2=440;
+var bigsqauremovement2=4;
 
 var circlex=50;
 var circley=50;
@@ -47,21 +50,21 @@ text("Exit",1275, 40)
    fill(0);
    square(350, bigsqaurey, bigsqaurediamenter);
    fill(0);
-   square (850, bigsqaurey, bigsqaurediamenter);
+   square (850, bigsqaurey2, bigsqaurediamenter);
    if(bigsqaurey >=600|| bigsqaurey<=0 )
    {
    bigsqauremovement*=-1;
    }
-
-   bigsqaurey+=bigsqauremovement;
-
+ bigsqaurey+=bigsqauremovement;
+   if(bigsqaurey2 >=600|| bigsqaurey2<=0 )
+   {
+   bigsqauremovement2*=-1;
+   }
+   bigsqaurey2+=bigsqauremovement2;
 //character and its functions to movement
 fill(0);
 circle(circlex, circley, circlediamenter);
 
-circlex+=10;
-circley+=3;
-circlediamenter+=8;
 
 if (circlex>=1350){
   circlex= 5;
@@ -96,7 +99,7 @@ if (circlediamenter>=100){
     fill(0);
     textSize(35);
     text("YOU WIN! Wahoo wahoo", 500,250);
-    i++;
+
   }
 
 fill('magenta');
@@ -104,6 +107,6 @@ circle(mouseEnemyX, mouseEnemyY, 10);
 }
   function mouseClicked()
 {
-  mouseEnemyX= enemyX;
-  mouseEnemyY= enemyY;
+  mouseEnemyX= mouseX;
+  mouseEnemyY= mouseY;
 }
